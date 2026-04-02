@@ -5,7 +5,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 // app/layout.tsx
-import { Instrument_Sans, Figtree } from 'next/font/google'
+import { Instrument_Sans, Figtree, Public_Sans } from 'next/font/google'
 import localFont from 'next/font/local'
 import { GeistSans } from 'geist/font/sans'
 
@@ -19,6 +19,12 @@ const figtree = Figtree({
   subsets: ['latin'],
   weight: ['400'],
   variable: '--font-figtree',
+})
+
+const publicSans = Public_Sans({
+  subsets: ['latin'],
+  weight: ['400', '600'],
+  variable: '--font-public-sans',
 })
 // end of my fonts setup
 
@@ -40,7 +46,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={`${instrumentSans.variable} ${figtree.variable} ${GeistSans.variable}`}>
+    <html lang="en" className={`${instrumentSans.variable} ${figtree.variable} ${publicSans.variable} ${GeistSans.variable}`}>
       <body>{children}</body>
     </html>
   );

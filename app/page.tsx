@@ -1,16 +1,14 @@
 import Image from "next/image";
 import Hero from '@/components/Hero'  // Hero component
-import FeaturesSection from '@/components/features';
+import Features from '@/components/features' // Features component;
 
 export default function Home() {
   return (
+    
     <main>
     <Hero />
+    <Features />
 
-    <div className="size-full">
-      <FeaturesSection />
-    </div>
-    
   </main>
   
   );

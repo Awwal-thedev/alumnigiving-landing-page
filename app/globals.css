@@ -5,11 +5,24 @@
   --foreground: #171717;
 }
 
-@theme inline {
+@theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --color-brand-navy:   #2a2179;
+  --color-brand-orange: #f96804;
+  --color-brand-dark:   #303030;
+  --color-brand-card:   #f6f6f6;
+  --color-brand-body:   #1a1a1a;
+  --color-brand-muted:  #232323;
+
+  /* Typography */
+  --font-instrument-sans: 'Instrument Sans', sans-serif;
+  --font-figtree:          'Figtree', sans-serif;
+  --font-public-sans:      'Public Sans', sans-serif;
+  --font-geist:            'Geist', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
